@@ -8,7 +8,7 @@ function draw() {
   let canvasSize = min(windowWidth, windowHeight);
   resizeCanvas(canvasSize, canvasSize);
 
-  background(0);
+  background(255);
 
   let rectWidth = canvasSize * 0.022; // Size ratio of small squares to canvas
   let rectHeight = canvasSize * 0.02;

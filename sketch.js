@@ -1,82 +1,88 @@
-class Rectangle {
-  constructor(x, y, width, height, color) {
-    this.x = x;
-    this.y = y;
-    this.width = width;
-    this.height = height;
-    this.color = color;
-  }
-
-  display() {
-    fill(this.color);
-    noStroke();
-    rect(this.x, this.y, this.width, this.height);
-  }
-}
-
-let rectangles = [];
-let colorSequence; // 颜色序列变量
-
-// 需要更改大小的长方形的索引
-let resizeIndexes = [8,13];
-
 function setup() {
-  let r = color(165,58,50);
-  let y = color(235,207,20);
-  let lb = color(56,85,151);
-  let db = color(57,70,140);
-  let g = color(216,214,199);
-
-  let canvasSize = min(windowWidth, windowHeight); // 确定画布大小为窗口宽高中较小的值
-  createCanvas(canvasSize, canvasSize);
-  let rectangleWidth = width / 47; // 长方形的宽度
-  let rectangleHeight = height / 47; // 长方形的高度
-  // 以下：初始化颜色序列
-  colorSequence = [r,y,r,g,y,r,y,g,db,g,y,db,g,y,r,y,g,y,y,g,r,y,y,db,g,y,r,y,g,y,g,y,y,r,g,db,y,y,r,y,r,y,g,y,y,y,r,y,y];
-   // 设置长方形的固定 x 坐标，维持在一列上
-   let fixedX = width - rectangleWidth;
-
-   let currentY = 0; // 初始化当前 y 坐标
-
-   for (let i = 0; i < colorSequence.length; i++) {
-    // 根据索引调整高度
-     let rectHeight = resizeIndexes.includes(i) ? (rectangleHeight * 1.5) : rectangleHeight;
-     let rectangle = new Rectangle(fixedX, currentY, rectangleWidth, rectHeight, colorSequence[i]);
-     rectangles.push(rectangle);
-
-     // 更新当前 y 坐标，为下一个长方形做准备
-     currentY += rectHeight;
-   }
-
-
+  createCanvas(windowWidth, windowHeight);
+  // Draw only once
+  noLoop();
 }
 
 function draw() {
-  background(242,242,240);
+  let canvasSize = min(windowWidth, windowHeight);
+  resizeCanvas(canvasSize, canvasSize);
 
-  // 显示所有长方形
-  for (let rectangle of rectangles) {
-    rectangle.display();
+  background(255);
+
+  let rectWidth = canvasSize * 0.022; // Size ratio of small squares to canvas
+  let rectHeight = canvasSize * 0.02;
+
+  // Set color
+  let yellow = '#EBCF14';
+  let red = '#A53A32';
+  let blue = '#39468C';
+  let grey = '#D8D6C7';
+
+  //Translate the origin point to the bottom
+  translate(0, canvasSize * 0.56);
+
+  noStroke();
+
+  drawRow(0, 0, rectWidth, rectHeight,
+    [yellow, yellow, grey, blue, yellow, yellow, blue, yellow, yellow, yellow, blue, yellow, grey, yellow, red, yellow, yellow, red,
+      grey, grey, red, yellow, yellow, grey, yellow, grey, yellow, yellow, yellow, red, yellow, blue, grey, grey, blue, yellow, yellow, red,
+      yellow, yellow, yellow, blue, grey, red, yellow, yellow]);
+
+  drawRow(0, canvasSize * 0.06, rectWidth, rectHeight,
+    [yellow,yellow, grey, red, yellow, yellow, blue, yellow, yellow, grey, yellow, red, yellow, yellow, grey,yellow, yellow, blue, yellow,
+      yellow, red, yellow, yellow, blue, yellow, yellow, grey, yellow, grey, yellow, yellow,grey, yellow, blue, yellow, blue, yellow,
+      yellow, blue, yellow, yellow, yellow, red, grey, yellow, red]);
+
+  drawRow(canvasSize * 0.081, canvasSize * 0.11, rectWidth * 3, rectHeight * 3,
+    [blue]);
+
+  drawRow(canvasSize * 0.058, canvasSize * 0.165, rectWidth, rectHeight,
+    [red, yellow, red, yellow, yellow, grey, yellow, blue, yellow, yellow, grey, yellow, yellow, blue, yellow, red, yellow, blue, yellow,
+      grey, red, grey]);
+
+  drawRow(0, canvasSize * 0.125, rectWidth, rectHeight,
+    [yellow, blue, yellow]);
+
+  drawRow(0, canvasSize * 0.216, rectWidth, rectHeight,
+    [yellow, blue, yellow]);
+
+  drawRow(0, canvasSize * 0.295, rectWidth, rectHeight,
+    [yellow, grey, yellow, blue, yellow, blue, yellow, yellow, red, grey, blue, yellow, yellow, yellow, grey, yellow, yellow, blue, yellow,
+      red, yellow, blue, yellow, red, yellow, blue, yellow, red,yellow, blue, yellow, red, yellow, blue, yellow, yellow, grey, yellow,
+      yellow, red, yellow, yellow,blue, yellow, yellow, red, yellow]);
+
+  drawRow(0, canvasSize * 0.386, rectWidth, rectHeight,
+    [yellow, yellow, grey, red, yellow, yellow, blue, yellow, yellow, red, yellow, blue, yellow, yellow, yellow, grey, yellow, grey, yellow,
+      blue, yellow, blue, yellow, yellow, grey, yellow, grey, yellow, red, yellow, blue, yellow, blue, yellow, yellow, grey, yellow, yellow,
+      yellow, blue, yellow, yellow, red, yellow, yellow, red, yellow]);
+
+  drawRow(0, canvasSize * 0.325, rectWidth, rectHeight,
+    [yellow, red, yellow]);
+
+  drawRow(canvasSize * 0.838, canvasSize * 0.24, rectWidth, rectHeight,
+    [blue, yellow, yellow, grey, yellow, red]);
+
+  drawRow(canvasSize * 0.136, canvasSize * 0.216, rectWidth * 4, rectHeight * 4,
+    [yellow]);
+
+  drawRow(canvasSize * 0.17, canvasSize * 0.233, rectWidth, rectHeight,
+    [grey]);
+
+  drawRow(canvasSize * 0.448, canvasSize * 0.386, rectWidth * 4, rectHeight * 3,
+    [red]);
+}
+
+function drawRow(x, y, w, h, colors) {
+  for (let i = 0; i < colors.length; i++) {
+    fill(colors[i]);
+    rect(x + i * w, y, w, h);
   }
 }
 
-
+// Adjust canvas size when window is resized
 function windowResized() {
-  let canvasSize = min(windowWidth, windowHeight); // 确定新的画布大小为窗口宽高中较小的值
+  let canvasSize = min(windowWidth, windowHeight);
   resizeCanvas(canvasSize, canvasSize);
-
-  let rectangleWidth = width / 47; // 新的长方形宽度
-  let rectangleHeight = height / 47; // 新的长方形高度
-
-  // 重新计算长方形的位置和大小
-  let fixedX = width - rectangleWidth;
-  let currentY = 0;
-  for (let i = 0; i < rectangles.length; i++) {
-    let rectHeight = resizeIndexes.includes(i) ? (rectangleHeight * 1.5) : rectangleHeight;
-    rectangles[i].x = fixedX;
-    rectangles[i].y = currentY;
-    rectangles[i].width = rectangleWidth;
-    rectangles[i].height = rectHeight;
-    currentY += rectHeight;
-  }
+  redraw(); // Redraw the canvas after resizing
 }

@@ -22,7 +22,7 @@ function draw() {
   translate(0, canvasSize * 0.56);
 
   noStroke();
-  
+
 
   drawRow(0, 0, rectWidth, rectHeight,
     [yellow, yellow, grey, blue, yellow, yellow, blue, yellow, yellow, yellow, blue, yellow, grey, yellow, red, yellow, yellow, red,
@@ -72,6 +72,32 @@ function draw() {
   drawRow(canvasSize * 0.448, canvasSize * 0.386, rectWidth * 4, rectHeight * 3,
     [red]);
 
+
+  // the first row
+  drawRow(0, canvasSize * -0.51, rectWidth, rectHeight, 
+    [yellow, blue, yellow, yellow, yellow, yellow, yellow, blue, yellow, grey, yellow, yellow, yellow, yellow, yellow, grey, yellow, 
+     yellow, yellow, yellow, yellow, yellow, yellow, yellow, grey, yellow, grey, yellow, grey, yellow, yellow, yellow, yellow, yellow, 
+     grey, grey, yellow, yellow, yellow, grey, blue, yellow, grey, yellow, blue, grey, yellow, grey]);
+    
+  // the second row 
+    drawRow(0, canvasSize * -0.38, rectWidth, rectHeight, 
+    [yellow, red, yellow, yellow, yellow, blue, yellow, grey, grey, red, yellow, grey, yellow, yellow, blue, yellow, grey, yellow, yellow, 
+      yellow, yellow, yellow, yellow, grey, grey, blue, yellow, red, grey, grey, yellow, yellow, yellow, yellow, yellow, grey, grey, yellow, 
+      yellow, yellow, grey, blue, grey, yellow, red, yellow, grey, blue, yellow]);
+
+  // the third row   
+    drawRow(0, canvasSize * -0.2, rectWidth, rectHeight, 
+    [yellow, red, yellow, blue, yellow, grey, red, yellow, yellow, grey, blue, yellow, yellow, grey, yellow, blue, yellow, yellow, yellow, 
+      red, yellow, yellow, blue, yellow, yellow, red, yellow, blue, yellow, yellow, red, yellow, yellow, yellow, red, yellow, yellow, yellow, 
+      yellow, blue, yellow, blue, yellow, red, yellow, grey, blue, grey, yellow]);
+
+  // the fourth row        
+    drawRow(0, canvasSize * -0.12, rectWidth, rectHeight, 
+    [yellow, red, grey, blue, yellow, yellow, red, grey, yellow, yellow, grey, blue, yellow, yellow, red, grey, grey, yellow, yellow, red, 
+      grey, grey, grey, grey, blue, yellow, yellow, grey, yellow, grey, yellow, yellow, red, grey, yellow, grey, yellow, yellow, blue, yellow, 
+      yellow, yellow, red, yellow, yellow, grey, red, yellow, red, grey]);
+     
+  
 
     //column
     translate(0,(-canvasSize * 0.56));

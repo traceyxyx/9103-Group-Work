@@ -31,42 +31,41 @@ function setup() {
 
   // Set big rectangle, Layer them on the canvas from largest to smallest.
 
-  let bigRectangle1 = new BigRectangle(canvasSize * 0.868, canvasSize * 0.21, canvasSize * 0.066, canvasSize * 0.066, [red]);
+  let bigRectangle1 = new BigRectangle(canvasSize * 0.868, canvasSize * 0.22, canvasSize * 0.066, canvasSize * 0.066, [red]);
   let bigRectangle2 = new BigRectangle(canvasSize * 0.648, canvasSize * 0.198, canvasSize * 0.088, canvasSize * 0.165, [blue]);
   let bigRectangle3 = new BigRectangle(canvasSize * 0.087, canvasSize * 0.66, canvasSize * 0.066, canvasSize * 0.066, [blue]);
   let bigRectangle4 = new BigRectangle(canvasSize * 0.154, canvasSize * 0.770, canvasSize * 0.088, canvasSize * 0.088, [yellow]);
-  let bigRectangle5 = new BigRectangle(canvasSize * 0.355, canvasSize * 0.946, canvasSize * 0.088, canvasSize * 0.066, [red]);
-  let bigRectangle6 = new BigRectangle(canvasSize * 0.185, canvasSize * 0.793, canvasSize * 0.022, canvasSize * 0.022, [grey]);
-  let bigRectangle7 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.666, canvasSize * 0.066, canvasSize * 0.066, [blue]);
-  let bigRectangle8 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.732, canvasSize * 0.066, canvasSize * 0.033, [yellow]);
-  let bigRectangle9 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.765, canvasSize * 0.066, canvasSize * 0.035, [red]);
-  let bigRectangle10 = new BigRectangle(canvasSize * 0.154, canvasSize * 0.088, canvasSize * 0.088, canvasSize * 0.022, [yellow]);
-  let bigRectangle11 = new BigRectangle(canvasSize * 0.868, canvasSize * 0.21, canvasSize * 0.066, canvasSize * 0.066, [red]);
-  let bigRectangle12 = new BigRectangle(canvasSize * 0.648, canvasSize * 0.198, canvasSize * 0.088, canvasSize * 0.165, [blue]);
-  let bigRectangle13 = new BigRectangle(canvasSize * 0.352, canvasSize * 0.374, canvasSize * 0.065, canvasSize * 0.187, [yellow]);
-  let bigRectangle14 = new BigRectangle(canvasSize * 0.692, canvasSize * 0.462, canvasSize * 0.088, canvasSize * 0.1, [red]);
-  let bigRectangle15 = new BigRectangle(canvasSize * 0.176, canvasSize * 0.358, canvasSize * 0.044, canvasSize * 0.088, [yellow]);
-  let bigRectangle16 = new BigRectangle(canvasSize * 0.286, canvasSize * 0.07, canvasSize * 0.066, canvasSize * 0.11, [red]);
-  let bigRectangle17 = new BigRectangle(canvasSize * 0.176, canvasSize * 0.066, canvasSize * 0.044, canvasSize * 0.11, [red]);
-  let bigRectangle18 = new BigRectangle(canvasSize * 0.286, canvasSize * 0.154, canvasSize * 0.066, canvasSize * 0.028, [grey]);
-  let bigRectangle19 = new BigRectangle(canvasSize * 0.3, canvasSize * 0.099, canvasSize * 0.033, canvasSize * 0.033, [grey]);
-  let bigRectangle20 = new BigRectangle(canvasSize * 0.352, canvasSize * 0.44, canvasSize * 0.066, canvasSize * 0.022, [grey]);
-  let bigRectangle21 = new BigRectangle(canvasSize * 0.352, canvasSize * 0.487, canvasSize * 0.066, canvasSize * 0.044, [grey]);
-  let bigRectangle22 = new BigRectangle(canvasSize * 0.176, canvasSize * 0.11, canvasSize * 0.044, canvasSize * 0.022, [grey]);
-  let bigRectangle23 = new BigRectangle(canvasSize * 0.187, canvasSize * 0.396, canvasSize * 0.022, canvasSize * 0.022, [grey]);
-  let bigRectangle24 = new BigRectangle(canvasSize * 0.286, canvasSize * 0.456, canvasSize * 0.044, canvasSize * 0.11, [blue]);
-  let bigRectangle25 = new BigRectangle(canvasSize * 0.286, canvasSize * 0.456, canvasSize * 0.044, canvasSize * 0.022, [yellow]);
-  let bigRectangle26 = new BigRectangle(canvasSize * 0.297, canvasSize * 0.5, canvasSize * 0.022, canvasSize * 0.022, [yellow]);
-  let bigRectangle27 = new BigRectangle(canvasSize * 0.648, canvasSize * 0.264, canvasSize * 0.088, canvasSize * 0.066, [red]);
-  let bigRectangle28 = new BigRectangle(canvasSize * 0.67, canvasSize * 0.275, canvasSize * 0.044, canvasSize * 0.033, [yellow]);
-  let bigRectangle29 = new BigRectangle(canvasSize * 0.714, canvasSize * 0.502, canvasSize * 0.044, canvasSize * 0.033, [grey]);
-  let bigRectangle30 = new BigRectangle(canvasSize * 0.692, canvasSize * 0.58, canvasSize * 0.088, canvasSize * 0.04, [grey]);
-  let bigRectangle31 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.502, canvasSize * 0.105, canvasSize * 0.04, [yellow]);
-  let bigRectangle32 = new BigRectangle(canvasSize * 0.888, canvasSize * 0.502, canvasSize * 0.022, canvasSize * 0.04, [red]);
-  let bigRectangle33 = new BigRectangle(canvasSize * 0.088, canvasSize * 0.22, canvasSize * 0.045, canvasSize * 0.045, [blue]);
-  let bigRectangle34 = new BigRectangle(canvasSize * 0.89, canvasSize * 0.11, canvasSize * 0.06, canvasSize * 0.047, [blue]);
-  let bigRectangle35 = new BigRectangle(canvasSize * 0.154, canvasSize * 0.265, canvasSize * 0.088, canvasSize * 0.075, [yellow]);
-  let bigRectangle36 = new BigRectangle(canvasSize * 0.181, canvasSize * 0.287, canvasSize * 0.035, canvasSize * 0.035, [grey]);
+  let bigRectangle5 = new BigRectangle(canvasSize * 0.185, canvasSize * 0.793, canvasSize * 0.022, canvasSize * 0.022, [grey]);
+  let bigRectangle6 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.666, canvasSize * 0.066, canvasSize * 0.066, [blue]);
+  let bigRectangle7 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.732, canvasSize * 0.066, canvasSize * 0.033, [yellow]);
+  let bigRectangle8 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.765, canvasSize * 0.066, canvasSize * 0.035, [red]);
+  let bigRectangle9 = new BigRectangle(canvasSize * 0.154, canvasSize * 0.088, canvasSize * 0.088, canvasSize * 0.022, [yellow]);
+  let bigRectangle10 = new BigRectangle(canvasSize * 0.868, canvasSize * 0.21, canvasSize * 0.066, canvasSize * 0.066, [red]);
+  let bigRectangle11 = new BigRectangle(canvasSize * 0.648, canvasSize * 0.198, canvasSize * 0.088, canvasSize * 0.165, [blue]);
+  let bigRectangle12 = new BigRectangle(canvasSize * 0.352, canvasSize * 0.374, canvasSize * 0.065, canvasSize * 0.187, [yellow]);
+  let bigRectangle13 = new BigRectangle(canvasSize * 0.692, canvasSize * 0.462, canvasSize * 0.088, canvasSize * 0.1, [red]);
+  let bigRectangle14 = new BigRectangle(canvasSize * 0.176, canvasSize * 0.358, canvasSize * 0.044, canvasSize * 0.088, [yellow]);
+  let bigRectangle15 = new BigRectangle(canvasSize * 0.286, canvasSize * 0.07, canvasSize * 0.066, canvasSize * 0.11, [red]);
+  let bigRectangle16 = new BigRectangle(canvasSize * 0.176, canvasSize * 0.066, canvasSize * 0.044, canvasSize * 0.11, [red]);
+  let bigRectangle17 = new BigRectangle(canvasSize * 0.286, canvasSize * 0.154, canvasSize * 0.066, canvasSize * 0.028, [grey]);
+  let bigRectangle18 = new BigRectangle(canvasSize * 0.3, canvasSize * 0.099, canvasSize * 0.033, canvasSize * 0.033, [grey]);
+  let bigRectangle19 = new BigRectangle(canvasSize * 0.352, canvasSize * 0.44, canvasSize * 0.066, canvasSize * 0.022, [grey]);
+  let bigRectangle20 = new BigRectangle(canvasSize * 0.352, canvasSize * 0.487, canvasSize * 0.066, canvasSize * 0.044, [grey]);
+  let bigRectangle21 = new BigRectangle(canvasSize * 0.176, canvasSize * 0.11, canvasSize * 0.044, canvasSize * 0.022, [grey]);
+  let bigRectangle22 = new BigRectangle(canvasSize * 0.187, canvasSize * 0.396, canvasSize * 0.022, canvasSize * 0.022, [grey]);
+  let bigRectangle23 = new BigRectangle(canvasSize * 0.286, canvasSize * 0.456, canvasSize * 0.044, canvasSize * 0.11, [blue]);
+  let bigRectangle24 = new BigRectangle(canvasSize * 0.286, canvasSize * 0.456, canvasSize * 0.044, canvasSize * 0.022, [yellow]);
+  let bigRectangle25 = new BigRectangle(canvasSize * 0.297, canvasSize * 0.5, canvasSize * 0.022, canvasSize * 0.022, [yellow]);
+  let bigRectangle26 = new BigRectangle(canvasSize * 0.648, canvasSize * 0.264, canvasSize * 0.088, canvasSize * 0.066, [red]);
+  let bigRectangle27 = new BigRectangle(canvasSize * 0.67, canvasSize * 0.275, canvasSize * 0.044, canvasSize * 0.033, [yellow]);
+  let bigRectangle28 = new BigRectangle(canvasSize * 0.714, canvasSize * 0.502, canvasSize * 0.044, canvasSize * 0.033, [grey]);
+  let bigRectangle29 = new BigRectangle(canvasSize * 0.692, canvasSize * 0.58, canvasSize * 0.088, canvasSize * 0.04, [grey]);
+  let bigRectangle30 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.502, canvasSize * 0.105, canvasSize * 0.04, [yellow]);
+  let bigRectangle31 = new BigRectangle(canvasSize * 0.888, canvasSize * 0.502, canvasSize * 0.022, canvasSize * 0.04, [red]);
+  let bigRectangle32 = new BigRectangle(canvasSize * 0.088, canvasSize * 0.22, canvasSize * 0.045, canvasSize * 0.045, [blue]);
+  let bigRectangle33 = new BigRectangle(canvasSize * 0.89, canvasSize * 0.11, canvasSize * 0.06, canvasSize * 0.047, [blue]);
+  let bigRectangle34 = new BigRectangle(canvasSize * 0.154, canvasSize * 0.265, canvasSize * 0.088, canvasSize * 0.075, [yellow]);
+  let bigRectangle35 = new BigRectangle(canvasSize * 0.181, canvasSize * 0.287, canvasSize * 0.035, canvasSize * 0.035, [grey]);
 
 
   // add all big rectangles to the array
@@ -105,7 +104,7 @@ function setup() {
   bigRectangles.push(bigRectangle33);
   bigRectangles.push(bigRectangle34);
   bigRectangles.push(bigRectangle35);
-  bigRectangles.push(bigRectangle36);
+ 
 
 }
 
@@ -162,7 +161,7 @@ function draw() {
 
 
   // the first row
-  drawRow(0, canvasSize * -0.51, rectWidth, rectHeight,
+  drawRow(0, canvasSize * -0.51, rectWidth, rectHeight*1.02,
     [yellow, blue, yellow, yellow, yellow, yellow, yellow, blue, yellow, grey, yellow, yellow, yellow, yellow, yellow, grey, yellow,
       yellow, yellow, yellow, yellow, yellow, yellow, yellow, grey, yellow, grey, yellow, grey, yellow, yellow, yellow, yellow, yellow,
       grey, grey, yellow, yellow, yellow, grey, blue, yellow, grey, yellow, blue, grey, yellow, grey]);
@@ -170,7 +169,7 @@ function draw() {
   // the second row 
   drawRow(0, canvasSize * -0.38, rectWidth, rectHeight,
     [yellow, red, yellow, yellow, yellow, blue, yellow, grey, grey, red, yellow, grey, yellow, blue, yellow, grey, yellow, yellow,
-      yellow, yellow, yellow, grey, grey, blue, yellow, red, grey, grey, yellow, yellow, yellow, yellow, yellow, grey, grey, yellow,
+      yellow, yellow, yellow, grey, grey, blue, yellow, red, grey, grey, yellow, yellow, yellow, yellow, grey, grey, yellow,
       yellow, yellow, grey, grey, grey, red, yellow, yellow, grey, blue, yellow]);
 
   // the third row   
@@ -209,12 +208,12 @@ function draw() {
   //second column from the right
   drawColumn(canvasSize * 0.912, 0, rectWidth, rectNewHeight,
     [yellow, blue, grey, yellow, grey, blue, blue]);
-  drawColumn(canvasSize * 0.912, canvasSize * 0.176, rectWidth, rectNewHeight,
+  drawColumn(canvasSize * 0.912, canvasSize * 0.179, rectWidth, rectNewHeight*0.98,
     [yellow, grey, red, red, red, grey, yellow, grey, yellow, grey, yellow, yellow, red]);
   drawColumn(canvasSize * 0.912, canvasSize * 0.64, rectWidth, rectNewHeight,
     [red, grey, yellow, yellow, grey, grey, blue, yellow, yellow, grey]);
   //third column
-  drawColumn(canvasSize * 0.868, 0, rectWidth, rectNewHeight,
+  drawColumn(canvasSize * 0.868, 0, rectWidth, rectNewHeight*0.96,
     [red, grey, blue, grey, yellow, red, yellow, grey, yellow, grey, red, red, red, grey, yellow, blue, yellow, red]);
 
   //fourth column

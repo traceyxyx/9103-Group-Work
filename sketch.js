@@ -103,30 +103,30 @@ function draw() {
     [blue, yellow, yellow, grey, yellow, red]);
 
   // Upper half of the rows
+
   // the first row
-  drawRow(0, canvasSize * -0.51, rectWidth, rectHeight,
-    [yellow, blue, yellow, yellow, yellow, yellow, yellow, blue, yellow, grey, yellow, yellow, yellow, yellow, yellow, grey, yellow,
-      yellow, yellow, yellow, yellow, yellow, yellow, yellow, grey, yellow, grey, yellow, grey, yellow, yellow, yellow, yellow, yellow,
-      grey, grey, yellow, yellow, yellow, grey, blue, yellow, grey, yellow, blue, grey, yellow, grey]);
+  drawRow(0, canvasSize * -0.537, rectWidth, rectHeight, 
+    [yellow, blue, yellow, yellow, yellow, yellow, yellow, yellow, blue, yellow, grey, yellow, yellow, yellow, yellow, grey, yellow, yellow, yellow, 
+      yellow, yellow, grey, yellow, grey, grey, yellow, yellow, yellow, yellow, yellow, grey,
+      grey, yellow, yellow, yellow, yellow, grey, yellow, yellow, grey, yellow, yellow, grey, yellow, grey]);
 
-  // the second row
-  drawRow(0, canvasSize * -0.38, rectWidth, rectHeight,
-    [yellow, red, yellow, yellow, yellow, blue, yellow, grey, grey, red, yellow, grey, yellow, blue, yellow, grey, yellow, yellow,
-      yellow, yellow, yellow, grey, grey, blue, yellow, red, grey, grey, yellow, yellow, yellow, yellow, yellow, grey, grey, yellow,
-      yellow, yellow, grey, grey, grey, red, yellow, yellow, grey, blue, yellow]);
+// the second row 
+  drawRow(0, canvasSize * -0.384, rectWidth, rectHeight, 
+    [yellow, red, yellow, yellow, yellow, yellow, blue, yellow, grey, grey, red, yellow, grey, yellow, blue, yellow, grey, yellow, yellow, 
+     yellow, grey, grey, yellow, yellow, yellow, grey, yellow, yellow, yellow, yellow, yellow, grey, grey, yellow, yellow, 
+     yellow, yellow, grey, grey, grey, red, red, grey, yellow, yellow]);
 
-  // the third row
-  drawRow(0, canvasSize * -0.2, rectWidth, rectHeight,
-    [yellow, red, yellow, blue, yellow, grey, red, yellow, yellow, grey, blue, yellow, yellow, grey, yellow, blue, yellow, yellow, yellow,
-      red, yellow, yellow, blue, yellow, yellow, red, yellow, blue, yellow, yellow, red, yellow, yellow, yellow, red, yellow, yellow, yellow,
-      yellow, blue, yellow, blue, yellow, red, yellow, grey, blue, grey, yellow]);
+// the third row   
+  drawRow(0, canvasSize * -0.185, rectWidth, rectHeight, 
+   [yellow, red, yellow, blue, yellow, yellow, grey, red, yellow, yellow, grey, blue, grey, yellow, blue, yellow, red, yellow,
+     yellow, yellow, blue, yellow, yellow, yellow, blue, yellow, yellow, yellow, yellow, red, yellow, yellow, yellow, red, yellow, yellow, yellow, 
+     yellow, yellow, yellow,  yellow, yellow, blue, grey, yellow]);
 
-  // the fourth row
-  drawRow(0, canvasSize * -0.12, rectWidth, rectHeight,
-    [yellow, red, grey, blue, yellow, yellow, red, grey, yellow, yellow, grey, blue, yellow, yellow, red, grey, grey, yellow, yellow, red,
-      grey, grey, grey, grey, blue, yellow, yellow, grey, yellow, grey, yellow, yellow, red, grey, yellow, grey, yellow, yellow, blue, yellow,
-      yellow, yellow, red, yellow, yellow, grey, red, yellow, red, grey]);
-
+// the fourth row        
+  drawRow(0, canvasSize * -0.119, rectWidth, rectHeight, 
+   [yellow, red, grey, blue, yellow, yellow, red, grey, yellow, yellow, grey, blue, yellow, red, grey, yellow, red, 
+     grey, grey, grey, blue, yellow, yellow, yellow, grey, yellow, yellow, yellow, red, grey, yellow, grey, yellow, yellow, blue, yellow, 
+     yellow, yellow, yellow, yellow, grey, yellow, yellow, yellow, grey]);
 
 
   //column

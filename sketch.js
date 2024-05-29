@@ -37,8 +37,18 @@ function setup() {
   let bigRectangle7 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.666, canvasSize * 0.066, canvasSize * 0.066, [blue]);
   let bigRectangle8 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.732, canvasSize * 0.066, canvasSize * 0.033, [yellow]);
   let bigRectangle9 = new BigRectangle(canvasSize * 0.846, canvasSize * 0.765, canvasSize * 0.066, canvasSize * 0.035, [red]);
-
-
+  let bigRectangle10 = new BigRectangle(canvasSize * 0.154, canvasSize * 0.063, canvasSize * 0.088, canvasSize * 0.045, [yellow]);
+  let bigRectangle11 = new BigRectangle(canvasSize * 0.175, canvasSize * 0.043, canvasSize * 0.04, canvasSize * 0.133, [red]);
+  let bigRectangle12 = new BigRectangle(canvasSize * 0.175, canvasSize * 0.11, canvasSize * 0.04, canvasSize * 0.02, [grey]);
+  let bigRectangle13 = new BigRectangle(canvasSize * 0.088, canvasSize * 0.22, canvasSize * 0.045, canvasSize * 0.045, [blue]);
+  let bigRectangle14 = new BigRectangle(canvasSize * 0.154, canvasSize * 0.287, canvasSize * 0.088, canvasSize * 0.075, [yellow]);
+  let bigRectangle15 = new BigRectangle(canvasSize * 0.181, canvasSize * 0.3, canvasSize * 0.035, canvasSize * 0.035, [grey]);
+  let bigRectangle16 = new BigRectangle(canvasSize * 0.154, canvasSize * 0.505, canvasSize * 0.088, canvasSize * 0.055, [red]);
+  let bigRectangle17 = new BigRectangle(canvasSize * 0.088, canvasSize * 0.22, canvasSize * 0.045, canvasSize * 0.045, [blue]);
+  let bigRectangle18 = new BigRectangle(canvasSize * 0.285, canvasSize * 0.461, canvasSize * 0.05, canvasSize * 0.035, [yellow]);
+  let bigRectangle19 = new BigRectangle(canvasSize * 0.285, canvasSize * 0.482, canvasSize * 0.05, canvasSize * 0.078, [blue]);
+  let bigRectangle20 = new BigRectangle(canvasSize * 0.296, canvasSize * 0.5, canvasSize * 0.026, canvasSize * 0.035, [yellow]);
+  let bigRectangle21 = new BigRectangle(canvasSize * 0.89, canvasSize * 0.11, canvasSize * 0.06, canvasSize * 0.047, [blue]);
 
   // add to the array
   bigRectangles.push(bigRectangle1);
@@ -50,7 +60,20 @@ function setup() {
   bigRectangles.push(bigRectangle7);
   bigRectangles.push(bigRectangle8);
   bigRectangles.push(bigRectangle9);
+  bigRectangles.push(bigRectangle10);
+  bigRectangles.push(bigRectangle11);
+  bigRectangles.push(bigRectangle12);
+  bigRectangles.push(bigRectangle13);
+  bigRectangles.push(bigRectangle14);
+  bigRectangles.push(bigRectangle15);
+  bigRectangles.push(bigRectangle16);
+  bigRectangles.push(bigRectangle17);
+  bigRectangles.push(bigRectangle18);
+  bigRectangles.push(bigRectangle19);
+  bigRectangles.push(bigRectangle20);
+  bigRectangles.push(bigRectangle21);
 }
+
 function draw() {
   let canvasSize = min(windowWidth, windowHeight);
   resizeCanvas(canvasSize, canvasSize);
@@ -103,7 +126,6 @@ function draw() {
     [blue, yellow, yellow, grey, yellow, red]);
 
   // Upper half of the rows
-
   // the first row
   drawRow(0, canvasSize * -0.537, rectWidth, rectHeight, 
     [yellow, blue, yellow, yellow, yellow, yellow, yellow, yellow, blue, yellow, grey, yellow, yellow, yellow, yellow, grey, yellow, yellow, yellow, 
